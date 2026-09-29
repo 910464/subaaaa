@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffd9e3">
-<title>For Subaa Mammmm ❤️</title>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+      content="#ff4f91">
+
+<title>For Ammu 💗</title>
+
+
 <style>
 
+/* =====================================
+   BASIC
+===================================== */
+
 * {
-
     box-sizing: border-box;
-
     margin: 0;
-
     padding: 0;
-
 }
+
+:root {
+    --pink: #ff4f91;
+    --light-pink: #ffd8e8;
+    --blue: #4d9cff;
+    --black: #17151a;
+    --text: #44323a;
+}
+
 
 body {
 
@@ -23,32 +41,39 @@ body {
 
     overflow: hidden;
 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: var(--text);
 
     background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,255,255,.9),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(77,156,255,.20),
+            transparent 28%
+        ),
 
         linear-gradient(
-
             145deg,
-
-            #fff7f9,
-
-            #ffe3eb 55%,
-
-            #ffd1df
-
+            #fff7fa,
+            #ffd8e8 50%,
+            #e4e9ff
         );
-
-    color: #402d34;
-
 }
 
 
-/* =========================
-
-   SCREEN
-
-========================= */
+/* =====================================
+   SCREENS
+===================================== */
 
 .screen {
 
@@ -56,23 +81,25 @@ body {
 
     inset: 0;
 
+    padding: 20px;
+
     display: flex;
 
     align-items: center;
 
     justify-content: center;
 
-    padding: 22px;
-
     opacity: 0;
 
     pointer-events: none;
 
-    transform: translateY(18px) scale(0.98);
+    transform:
+        translateY(18px)
+        scale(.98);
 
-    transition: 0.5s ease;
-
+    transition: .5s;
 }
+
 
 .screen.active {
 
@@ -80,108 +107,115 @@ body {
 
     pointer-events: auto;
 
-    transform: translateY(0) scale(1);
-
+    transform: none;
 }
 
 
-/* =========================
-
+/* =====================================
    CARD
-
-========================= */
+===================================== */
 
 .card {
 
-    width: min(92vw, 440px);
+    width: min(92vw, 460px);
 
-    max-height: 90vh;
+    max-height: 91vh;
 
     overflow: auto;
 
     text-align: center;
 
-    padding: 32px 25px;
+    padding: 30px 24px;
 
     border-radius: 30px;
 
-    background: rgba(255,255,255,0.84);
+    background:
+        rgba(255,255,255,.94);
 
-    backdrop-filter: blur(18px);
+    backdrop-filter:
+        blur(18px);
 
-    -webkit-backdrop-filter: blur(18px);
+    -webkit-backdrop-filter:
+        blur(18px);
 
     box-shadow:
-
-        0 20px 65px rgba(145,54,83,0.15);
-
+        0 22px 70px
+        rgba(102,36,58,.14);
 }
 
 
-/* =========================
-
+/* =====================================
    TEXT
-
-========================= */
+===================================== */
 
 .emoji {
 
-    font-size: 56px;
+    font-size: 55px;
 
-    margin-bottom: 14px;
-
-    animation: float 2.5s ease-in-out infinite;
-
+    animation:
+        float 2.5s infinite;
 }
+
+
+.heartbig {
+
+    font-size: 82px;
+
+    animation:
+        beat 1s infinite;
+}
+
 
 h1 {
 
-    font-size: 29px;
+    font-size: 28px;
 
-    margin-bottom: 13px;
-
+    margin:
+        12px 0;
 }
 
-h2 {
-
-    font-size: 21px;
-
-    margin-bottom: 12px;
-
-}
 
 p {
 
-    font-size: 16.5px;
+    font-size: 16px;
 
     line-height: 1.65;
 
-    color: #6b5059;
+    color: #68545c;
 
-    margin-bottom: 21px;
-
+    margin:
+        15px 0 22px;
 }
+
 
 strong {
 
-    color: #b7355c;
-
+    color: #d83f77;
 }
+
+
+.question {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    margin:
+        15px 0 18px;
+}
+
 
 .tiny {
 
-    font-size: 13px !important;
+    font-size: 13px;
 
-    opacity: 0.7;
-
+    opacity: .7;
 }
 
 
-/* =========================
-
+/* =====================================
    BUTTONS
-
-========================= */
+===================================== */
 
 button {
 
@@ -189,119 +223,156 @@ button {
 
     border-radius: 999px;
 
-    padding: 13px 20px;
+    padding:
+        13px 20px;
 
-    margin: 6px;
+    margin: 5px;
 
-    font-size: 15.5px;
+    font-size: 15px;
 
     font-weight: 700;
 
     cursor: pointer;
 
-    transition: 0.25s ease;
-
+    transition: .2s;
 }
+
 
 button:active {
 
-    transform: scale(0.94);
-
+    transform:
+        scale(.94);
 }
+
 
 .primary {
 
-    background: #e64e77;
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f91,
+            #e73876
+        );
 
     color: white;
 
     box-shadow:
-
-        0 8px 20px rgba(230,78,119,0.25);
-
+        0 8px 22px
+        rgba(255,79,145,.25);
 }
+
+
+.blue {
+
+    background:
+        linear-gradient(
+            135deg,
+            #55a6ff,
+            #397fd1
+        );
+
+    color: white;
+}
+
+
+.dark {
+
+    background:
+        #17151a;
+
+    color: white;
+}
+
 
 .soft {
 
-    background: #fff0f4;
+    background:
+        #fff0f5;
 
-    color: #b7355c;
+    color:
+        #bd3567;
 
-    border: 1px solid #f2b8c8;
-
+    border:
+        1px solid #f0b4c9;
 }
 
-.danger {
-
-    background: white;
-
-    color: #b7355c;
-
-    border: 1px solid #e9a8ba;
-
-}
-
-
-/* =========================
-
-   MESSAGE
-
-========================= */
 
 .msg {
 
-    min-height: 45px;
+    min-height: 40px;
+
+    color: #c13a68;
+
+    font-weight: 700;
 
     margin-top: 10px;
-
-    color: #bd3b60;
-
-    font-weight: 650;
-
-    line-height: 1.5;
-
 }
 
 
-/* =========================
+.divider {
 
+    height: 1px;
+
+    background:
+        #efd5df;
+
+    margin:
+        20px 0;
+}
+
+
+/* =====================================
+   RUNAWAY BUTTONS
+===================================== */
+
+#run1,
+#run2 {
+
+    position: relative;
+}
+
+
+/* =====================================
+   HEARTS
+===================================== */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    z-index: 20;
+
+    pointer-events: none;
+
+    animation:
+        rise linear forwards;
+}
+
+
+.star {
+
+    position: fixed;
+
+    z-index: 21;
+
+    animation:
+        star 1.4s forwards;
+}
+
+
+/* =====================================
    ANIMATIONS
-
-========================= */
+===================================== */
 
 @keyframes float {
 
-    0%,
-
-    100% {
-
-        transform: translateY(0);
-
-    }
-
     50% {
 
-        transform: translateY(-8px);
-
+        transform:
+            translateY(-8px);
     }
-
-}
-
-
-@keyframes pulse {
-
-    50% {
-
-        transform: scale(1.05);
-
-    }
-
-}
-
-.pulse {
-
-    animation: pulse 1.5s infinite;
-
 }
 
 
@@ -309,466 +380,1077 @@ button:active {
 
     30% {
 
-        transform: scale(1.13);
-
+        transform:
+            scale(1.15);
     }
 
-    60% {
+    70% {
 
-        transform: scale(1);
-
+        transform:
+            scale(1);
     }
-
 }
 
-
-/* =========================
-
-   HEARTS
-
-========================= */
-
-.heart {
-
-    position: fixed;
-
-    bottom: -40px;
-
-    z-index: 50;
-
-    pointer-events: none;
-
-    animation: rise linear forwards;
-
-}
 
 @keyframes rise {
 
     to {
 
         transform:
+            translateY(-120vh)
+            rotate(420deg);
 
-            translateY(-115vh)
+        opacity: 0;
+    }
+}
 
-            rotate(360deg);
+
+@keyframes star {
+
+    from {
 
         opacity: 0;
 
+        transform:
+            scale(.3);
     }
 
+    30% {
+
+        opacity: 1;
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform:
+            scale(1.5)
+            translateY(-30px);
+    }
 }
 
 
-/* =========================
+/* =====================================
+   MOBILE
+===================================== */
 
-   FINAL HEART
+@media(max-height:650px) {
 
-========================= */
+    .card {
 
-.finalHeart {
+        padding:
+            20px;
+    }
 
-    font-size: 82px;
+    .emoji {
 
-    animation: beat 1s infinite;
+        font-size:
+            42px;
+    }
 
+    h1 {
+
+        font-size:
+            24px;
+    }
+
+    p {
+
+        font-size:
+            14px;
+    }
 }
 
-
-/* =========================
-
-   DIVIDER
-
-========================= */
-
-.divider {
-
-    height: 1px;
-
-    background: #f1d5dd;
-
-    margin: 20px 0;
-
-}
 </style>
+
 </head>
+
 
 <body>
 
-<!-- =====================================================
 
-     SCREEN 1
+<!-- =====================================
+     1. OPENING
+===================================== -->
 
-====================================================== -->
-<section class="screen active" id="s1">
-<div class="card">
-<div class="emoji">
+<section
+    class="screen active"
+    id="s1">
 
+    <div class="card">
+
+        <div class="emoji">
+            🌙
+        </div>
+
+        <h1>
+            Hey Ammu...
+        </h1>
+
+        <p>
+
+            This isn't another apology.
+
+            <br><br>
+
+            This is something I wanted you
+            to know about
+
+            <strong>
+                Abishekk...
+            </strong>
+
+            <br>
+
+            or maybe...
+
+            <br>
+
+            <strong>
+                Lucifer.
+            </strong>
+
+            🖤
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(2)">
+
+            I want to know... 👀
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     2. NO MATTER WHAT
+===================================== -->
+
+<section
+    class="screen"
+    id="s2">
+
+    <div class="card">
+
+        <div class="emoji">
+            💗
+        </div>
+
+        <h1>
+            No matter what happens...
+        </h1>
+
+        <p>
+
+            Whatever happens in your life,
+
+            whatever you're going through,
+
+            whatever changes around you...
+
+            <br><br>
+
+            <strong>
+                I want you to know
+                that I'll be there.
+            </strong>
+
+            <br><br>
+
+            Not because I expect anything
+            from you.
+
+            <br>
+
+            Not because you owe me anything.
+
+            <br><br>
+
+            Just because
+
+            <strong>
+                you matter to me.
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(3)">
+
+            Keep going... 💗
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     3. IF YOU SAY GO
+===================================== -->
+
+<section
+    class="screen"
+    id="s3">
+
+    <div class="card">
+
+        <div class="emoji">
+            🖤
+        </div>
+
+        <h1>
+            Even if you say "go"...
+        </h1>
+
+        <p>
+
+            If one day you tell me to go,
+
+            I'll respect your space.
+
+            <br><br>
+
+            But that doesn't mean I'll
+            suddenly stop caring about you.
+
+            <br><br>
+
+            Even if life takes us in
+            different directions,
+
+            I'll still be somewhere quietly
+            wishing that you're happy
+            and doing okay.
+
+            <br><br>
+
+            <strong>
+                Sometimes caring doesn't
+                need to be loud.
+            </strong>
+
+        </p>
+
+        <button
+            class="blue"
+            onclick="go(4)">
+
+            There's more? 💙
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     4. FROM A DISTANCE
+===================================== -->
+
+<section
+    class="screen"
+    id="s4">
+
+    <div class="card">
+
+        <div class="emoji">
+            🌌
+        </div>
+
+        <h1>
+            Even from a distance...
+        </h1>
+
+        <p>
+
+            If someday I have to stand
+            far away,
+
+            I'll still wish good things
+            for you.
+
+            <br><br>
+
+            I'll do whatever I reasonably
+            can to see you happy —
+
+            even if sometimes that means
+            doing it quietly,
+            from a distance.
+
+            <br><br>
+
+            <strong>
+                You won't have to see me
+                to know that I wished you well.
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(5)">
+
+            Now answer something... 👀
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     5. QUESTION 1
+===================================== -->
+
+<section
+    class="screen"
+    id="s5">
+
+    <div class="card">
+
+        <div class="emoji">
             👀
-</div>
+        </div>
 
-<h1>
+        <div class="question">
 
-            Subaa Mammmm...
-</h1>
+            Do you think he'll
+            just leave you?
 
-<p>
+        </div>
 
-            Ammu... Ladduuu... ❤️
-<br>
-<br>
-
-            Before you decide to stay angry with one particular
-<strong>Lucifer</strong> forever...
-</p>
-
-<button
-
-            class="primary pulse"
-
-            onclick="go(2)"
->
-
-            Please click this once 🥺
-</button>
-</div>
-</section>
-
-<!-- =====================================================
-
-     SCREEN 2
-
-====================================================== -->
-<section class="screen" id="s2">
-<div class="card">
-<div class="emoji">
-
-            😭
-</div>
-
-<h1>
-
-            Okay... I admit it.
-</h1>
-
-<p>
-
-            I said other girls' names and started talking about
-
-            how if they sight me, say they love me, or propose to me,
-
-            I'd just go and talk to them and say
-<strong>“okay.”</strong>
-<br>
-<br>
-
-            And yes...
-<br>
-
-            I now understand why
-<strong>Subaa Mammmm</strong>
-
-            was angry. 😭
-</p>
-
-<button
-
-            class="primary"
-
-            onclick="go(3)"
->
-
-            I have more to say... 🥺
-</button>
-</div>
-</section>
-
-<!-- =====================================================
-
-     SCREEN 3
-
-====================================================== -->
-<section class="screen" id="s3">
-<div class="card">
-<div class="emoji">
-
-            🙈
-</div>
-
-<h1>
-
-            My defence is...
-</h1>
-
-<p>
-
-            Actually...
-<strong>
-
-                I don't have one.
-</strong>
-
-            😂
-<br>
-<br>
-
-            Because trying to defend myself here would probably
-
-            make the situation
-<strong>100 times worse.</strong>
-<br>
-<br>
-
-            So Lucifer has officially surrendered. 🏳️😭
-</p>
-
-<button
-
-            class="primary"
-
-            onclick="go(4)"
->
-
-            What happens now? 👀
-</button>
-</div>
-</section>
-
-<!-- =====================================================
-
-     SCREEN 4
-
-====================================================== -->
-<section class="screen" id="s4">
-<div class="card">
-<div class="emoji">
-
-            😤
-</div>
-
-<h1>
-
-            Choose your punishment.
-</h1>
-
-<p>
-
-            Be honest, Ammu.
-<br>
-
-            How angry are you? 😂
-</p>
-
-<button
-
-            class="danger"
-
-            onclick="angry()"
->
-
-            I'm STILL angry 😤
-</button>
-
-<button
-
+        <button
             class="soft"
+            id="run1"
+            onclick="runAway(1)">
 
-            onclick="maybe()"
->
+            Yes, he'll leave 😌
 
-            A little less angry 😒
-</button>
+        </button>
 
-<br>
-
-<button
-
+        <button
             class="primary"
+            onclick="answer(1)">
 
-            onclick="go(5)"
->
+            No... he won't. 💗
 
-            Okay... I forgive you ❤️
-</button>
+        </button>
 
-<div
-
+        <div
             class="msg"
+            id="m1">
+        </div>
 
-            id="angryMsg"
-></div>
-</div>
+    </div>
+
 </section>
 
-<!-- =====================================================
 
-     SCREEN 5
 
-====================================================== -->
-<section class="screen" id="s5">
-<div class="card">
-<div class="emoji">
+<!-- =====================================
+     6. QUESTION 2
+===================================== -->
 
+<section
+    class="screen"
+    id="s6">
+
+    <div class="card">
+
+        <div class="emoji">
             🥺
-</div>
+        </div>
 
-<h1>
+        <div class="question">
 
-            One final test...
-</h1>
+            If you push him away,
 
-<p>
+            <br>
 
-            If you're still angry,
+            will he stop caring?
 
-            you can click:
-<br>
-<br>
-<strong>
+        </div>
 
-                “No, I won't forgive you.”
-</strong>
-<br>
-<br>
+        <button
+            class="soft"
+            id="run2"
+            onclick="runAway(2)">
 
-            But let's see if Lucifer will let you. 😌
-</p>
+            Obviously yes 😤
 
-<!-- RUNNING AWAY BUTTON -->
-<button
+        </button>
 
-            class="danger"
+        <button
+            class="blue"
+            onclick="answer(2)">
 
-            id="runaway"
+            I don't think so... 💙
 
-            onclick="escapeButton()"
->
+        </button>
 
-            No, I won't forgive you 😤
-</button>
-
-<button
-
-            class="primary"
-
-            onclick="go(6)"
->
-
-            Fine... I forgive Lucifer ❤️
-</button>
-
-<div
-
+        <div
             class="msg"
+            id="m2">
+        </div>
 
-            id="runMsg"
-></div>
-</div>
+    </div>
+
 </section>
 
-<!-- =====================================================
 
-     FINAL SCREEN
 
-====================================================== -->
-<section class="screen" id="s6">
-<div class="card">
-<div class="finalHeart">
+<!-- =====================================
+     7. QUESTION 3
+===================================== -->
 
-            ❤️
-</div>
+<section
+    class="screen"
+    id="s7">
 
-<h1>
+    <div class="card">
 
-            Okay, Subaa Mammmm.
-</h1>
+        <div class="emoji">
+            🌙
+        </div>
 
-<p>
+        <div class="question">
 
-            I really am sorry, Ammu.
-<br>
-<br>
+            If you say
 
-            I shouldn't have said those things just to tease you
+            <br>
 
-            or made it sound like I'd happily go along with
+            "I don't need you"...
 
-            someone else saying they love me or proposing to me.
-<br>
-<br>
-<strong>
+            <br><br>
 
-                I understand why that hurt and made you angry.
-</strong>
-<br>
-<br>
+            will he suddenly forget you?
 
-            So this isn't Lucifer trying to escape the punishment. 😂
-<br>
+        </div>
 
-            It's just Abishekk saying a genuine:
-<br>
-<br>
-<strong>
+        <button
+            class="dark"
+            onclick="answer(3)">
 
-                I'm sorry. ❤️
-</strong>
-<br>
-<br>
+            Maybe... 🖤
 
-            And if this little website made you smile even for
+        </button>
 
-            a few seconds...
-<br>
-
-            then I'll consider that my first step
-
-            towards getting out of trouble. 🥺
-</p>
-
-<div class="divider"></div>
-
-<p class="tiny">
-
-            P.S. — Please don't use the
-
-            “still angry” button too many times.
-<br>
-
-            My heart has limited warranty. 😭😂
-</p>
-
-<button
-
+        <button
             class="primary"
+            onclick="answer(3)">
 
-            onclick="hearts()"
->
+            No. 💗
 
-            One tiny smile please? 🥺❤️
-</button>
-</div>
+        </button>
+
+        <div
+            class="msg"
+            id="m3">
+        </div>
+
+    </div>
+
 </section>
 
-<!-- =====================================================
 
-     JAVASCRIPT
 
-====================================================== -->
+<!-- =====================================
+     8. THREE PROMISES
+===================================== -->
+
+<section
+    class="screen"
+    id="s8">
+
+    <div class="card">
+
+        <div class="emoji">
+            💗💙🖤
+        </div>
+
+        <h1>
+            Three little promises
+        </h1>
+
+        <p>
+
+            <strong>
+                💗 Promise 01
+            </strong>
+
+            <br>
+
+            I'll celebrate your happiness.
+
+        </p>
+
+        <p>
+
+            <strong>
+                💙 Promise 02
+            </strong>
+
+            <br>
+
+            I'll respect your space.
+
+        </p>
+
+        <p>
+
+            <strong>
+                🖤 Promise 03
+            </strong>
+
+            <br>
+
+            I'll never turn caring
+            into a reason to control
+            your life.
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(9)">
+
+            Something for your bad days 🌧️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     9. BAD DAYS
+===================================== -->
+
+<section
+    class="screen"
+    id="s9">
+
+    <div class="card">
+
+        <div class="emoji">
+            🌧️
+        </div>
+
+        <h1>
+            On your bad days...
+        </h1>
+
+        <p>
+
+            You don't have to pretend
+            you're okay every day.
+
+            <br><br>
+
+            You don't always have
+            to be strong.
+
+            <br><br>
+
+            And if you ever need
+            someone to listen,
+
+            <strong>
+                I'll be here.
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(10)">
+
+            Give me a random message ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     10. RANDOM MESSAGES
+===================================== -->
+
+<section
+    class="screen"
+    id="s10">
+
+    <div class="card">
+
+        <div class="emoji">
+            🎁
+        </div>
+
+        <h1>
+            A little message for you
+        </h1>
+
+        <p id="randomText">
+
+            Tap the button whenever you want.
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="randomMessage()">
+
+            Another one 💗
+
+        </button>
+
+        <button
+            class="blue"
+            onclick="go(11)">
+
+            Open something else 🎵
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     11. MUSIC
+===================================== -->
+
+<section
+    class="screen"
+    id="s11">
+
+    <div class="card">
+
+        <div class="emoji">
+            🎵
+        </div>
+
+        <h1>
+            A song for you
+        </h1>
+
+        <p>
+
+            Add your own song later
+            by putting a file called
+
+            <strong>
+                song.mp3
+            </strong>
+
+            beside this HTML file.
+
+        </p>
+
+        <audio
+            controls
+            style="width:100%;">
+
+            <source
+                src="song.mp3"
+                type="audio/mpeg">
+
+        </audio>
+
+        <p class="tiny">
+
+            If you haven't added a song yet,
+            just continue. ❤️
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(12)">
+
+            Enter the shadows... 🖤
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     12. SHADOW
+===================================== -->
+
+<section
+    class="screen"
+    id="s12">
+
+    <div
+        class="card"
+        style="
+        background:#17151a;
+        color:white;
+        ">
+
+        <div class="emoji">
+            🌙
+        </div>
+
+        <h1
+            style="color:white;">
+
+            Even from the shadows
+
+        </h1>
+
+        <p
+            style="color:#ddd;">
+
+            If I'm not beside you,
+            that doesn't mean I stopped
+            wishing good things for you.
+
+            <br><br>
+
+            Sometimes caring means knowing
+            when to stand close...
+
+            <br>
+
+            and when to quietly step back.
+
+            <br><br>
+
+            <strong>
+                I'll still wish for your light.
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(13)">
+
+            Read this slowly... 🌙
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     13. POEM
+===================================== -->
+
+<section
+    class="screen"
+    id="s13">
+
+    <div class="card">
+
+        <div class="emoji">
+            🌙
+        </div>
+
+        <h1>
+            Even From The Shadows
+        </h1>
+
+        <p>
+
+            If someday you ask me to leave,
+
+            <br>
+
+            I'll step away,
+
+            <br>
+
+            but I won't turn my heart away.
+
+            <br><br>
+
+            If distance builds a thousand roads
+
+            <br>
+
+            between where you are
+
+            <br>
+
+            and where I stand,
+
+            <br>
+
+            I'll still hope
+
+            <br>
+
+            every road you take
+
+            <br>
+
+            leads somewhere beautiful.
+
+            <br><br>
+
+            I won't need to stand beside you
+
+            <br>
+
+            to wish you happiness.
+
+            <br><br>
+
+            I can do that quietly—
+
+            <br>
+
+            from a distance,
+
+            <br>
+
+            from the shadows,
+
+            <br>
+
+            beneath the same moon
+
+            <br>
+
+            you once looked at.
+
+            <br><br>
+
+            And if life asks me
+
+            <br>
+
+            to become a stranger,
+
+            <br>
+
+            I'll respect the distance
+
+            <br>
+
+            but never rewrite the memories.
+
+            <br><br>
+
+            Because some people
+
+            <br>
+
+            don't disappear
+
+            <br>
+
+            when they leave your sight.
+
+            <br><br>
+
+            They simply become
+
+            <br>
+
+            a quiet wish
+
+            <br>
+
+            you carry inside.
+
+            <br><br>
+
+            And if you ever wonder
+
+            <br>
+
+            whether he left...
+
+            <br><br>
+
+            <strong>
+                No, Ammu.
+            </strong>
+
+            <br><br>
+
+            He just learned
+
+            <br>
+
+            how to stand far enough away
+
+            <br>
+
+            to let you breathe,
+
+            <br>
+
+            while still quietly wishing
+
+            <br>
+
+            that you smile.
+
+        </p>
+
+        <p>
+
+            <strong>
+                — Lucifer 🖤
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="go(14)">
+
+            One final letter 💌
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     14. FINAL LETTER
+===================================== -->
+
+<section
+    class="screen"
+    id="s14">
+
+    <div class="card">
+
+        <div class="emoji">
+            💌
+        </div>
+
+        <h1>
+            Dear Ammu,
+        </h1>
+
+        <p>
+
+            I don't know what tomorrow
+            looks like.
+
+            <br>
+
+            I don't know where life
+            will take us.
+
+            <br><br>
+
+            But I know one thing.
+
+            <br><br>
+
+            Some people enter your life
+            and become a chapter.
+
+            <br><br>
+
+            Some become a memory.
+
+            <br><br>
+
+            And some somehow become
+            a part of the person you are.
+
+            <br><br>
+
+            <strong>
+                You're one of those people
+                for me.
+            </strong>
+
+            <br><br>
+
+            So wherever life takes you,
+
+            I hope it is kind to you.
+
+            <br><br>
+
+            And if you ever look back,
+
+            I hope you remember that somewhere,
+
+            there was a Lucifer who genuinely
+            wanted to see his Ammu happy.
+
+            <br><br>
+
+            <strong>
+                Always. 💗💙🖤
+            </strong>
+
+        </p>
+
+        <button
+            class="primary"
+            onclick="finalHearts()">
+
+            One last thing... 💗
+
+        </button>
+
+        <div
+            class="msg"
+            id="finalMsg">
+        </div>
+
+    </div>
+
+</section>
+
+
+
 <script>
 
 
-/* =========================
-
-   SCREEN NAVIGATION
-
-========================= */
+/* =====================================
+   NAVIGATION
+===================================== */
 
 function go(number) {
 
     document
-
         .querySelectorAll(".screen")
-
         .forEach(function(screen) {
 
             screen.classList.remove("active");
@@ -777,291 +1459,339 @@ function go(number) {
 
 
     document
-
         .getElementById("s" + number)
-
         .classList.add("active");
 
 }
 
 
-/* =========================
 
-   ANGRY BUTTON
+/* =====================================
+   RUNAWAY BUTTONS
+===================================== */
 
-========================= */
+let tries1 = 0;
 
-let anger = 0;
+let tries2 = 0;
 
 
-function angry() {
+function runAway(number) {
 
-    anger++;
+    let button;
 
+    let tries;
 
-    const messages = [
 
-        "Okay okay... I deserve that 😭",
+    if (number === 1) {
 
-        "Still angry?? Lucifer is officially in danger. 😭",
+        button =
+            document.getElementById("run1");
 
-        "Ammuuu pleaseee... one tiny smile? 🥺",
+        tries1++;
 
-        "Fine. I'll accept my punishment. 😂",
+        tries = tries1;
 
-        "Okay, I'll stop talking before I make it worse. 😭❤️"
+    } else {
 
-    ];
+        button =
+            document.getElementById("run2");
 
+        tries2++;
 
-    document
+        tries = tries2;
 
-        .getElementById("angryMsg")
-
-        .textContent =
-
-        messages[
-
-            Math.min(
-
-                anger - 1,
-
-                messages.length - 1
-
-            )
-
-        ];
-
-}
-
-
-/* =========================
-
-   LITTLE LESS ANGRY
-
-========================= */
-
-function maybe() {
-
-    document
-
-        .getElementById("angryMsg")
-
-        .innerHTML =
-
-        "Progress! 😭❤️<br>" +
-
-        "<span class='tiny'>" +
-
-        "Lucifer sees a tiny ray of hope..." +
-
-        "</span>";
-
-
-    setTimeout(
-
-        function() {
-
-            go(5);
-
-        },
-
-        1500
-
-    );
-
-}
-
-
-/* =========================
-
-   RUNAWAY BUTTON
-
-========================= */
-
-let tries = 0;
-
-
-function escapeButton() {
-
-    tries++;
-
-
-    const button =
-
-        document.getElementById("runaway");
-
-
-    const card =
-
-        button.closest(".card");
-
-
-    const maxX =
-
-        Math.max(
-
-            20,
-
-            card.clientWidth / 2 - 80
-
-        );
-
-
-    const maxY = 90;
+    }
 
 
     const x =
-
-        (Math.random() * 2 - 1) * maxX;
+        (Math.random() * 2 - 1) * 120;
 
 
     const y =
-
-        (Math.random() * 2 - 1) * maxY;
+        (Math.random() * 2 - 1) * 90;
 
 
     button.style.transform =
-
         `translate(${x}px, ${y}px)`;
 
 
     document
-
-        .getElementById("runMsg")
-
+        .getElementById("m" + number)
         .textContent =
 
         tries < 3
 
         ?
 
-        "Nope 😂 Lucifer said you can't click that."
+        "Nice try 😂 That answer is unavailable."
 
         :
 
-        "Ammu is persistent 😭😂... okay, okay!";
+        "Ammu is too persistent 😭😂";
 
 }
 
 
-/* =========================
 
-   FLOATING HEARTS
+/* =====================================
+   QUESTION ANSWERS
+===================================== */
 
-========================= */
+function answer(number) {
 
-function hearts() {
+    const messages = {
 
+        1:
+        "Correct answer. 😂💗",
+
+        2:
+        "Exactly. 💙",
+
+        3:
+        "Nope. 🖤💗"
+
+    };
+
+
+    document
+        .getElementById("m" + number)
+        .textContent =
+        messages[number];
+
+
+    setTimeout(function() {
+
+        if (number === 1) {
+
+            go(6);
+
+        }
+
+        else if (number === 2) {
+
+            go(7);
+
+        }
+
+        else {
+
+            go(8);
+
+        }
+
+    }, 1200);
+
+}
+
+
+
+/* =====================================
+   RANDOM MESSAGES
+===================================== */
+
+const messages = [
+
+    "Because Lucifer has officially learned that teasing Ammu has consequences. 😭",
+
+    "Your happiness will always be something I quietly wish for. 💗",
+
+    "Distance can change a place, but it doesn't automatically erase care. 💙",
+
+    "Some people become memories. Some become a part of you. 🖤",
+
+    "Please smile once. That's an order from absolutely nobody. 😂💗",
+
+    "Even on your worst days, you deserve someone who listens."
+
+];
+
+
+function randomMessage() {
+
+    const message =
+
+        messages[
+            Math.floor(
+                Math.random() *
+                messages.length
+            )
+        ];
+
+
+    document
+        .getElementById("randomText")
+        .textContent =
+        message;
+
+}
+
+
+
+/* =====================================
+   FINAL HEART SHOWER
+===================================== */
+
+function finalHearts() {
+
+    document
+        .getElementById("finalMsg")
+        .textContent =
+        "This one is for you. 💗💙🖤";
+
+
+    const icons = [
+
+        "💗",
+        "💗",
+        "💙",
+        "🖤",
+        "💕",
+        "💖",
+        "💙",
+        "🖤"
+
+    ];
+
+
+    /* HEARTS */
 
     for (
-
         let i = 0;
-
-        i < 45;
-
+        i < 130;
         i++
-
     ) {
 
+        setTimeout(function() {
 
-        setTimeout(
-
-            function() {
-
-
-                const heart =
-
-                    document.createElement("div");
+            const heart =
+                document.createElement("div");
 
 
-                heart.className =
-
-                    "heart";
-
-
-                heart.textContent =
-
-                    [
-
-                        "🖤",
-
-                        "💗",
-
-                        "💙",
-
-                        "💖",
-
-                        "🌸"
-
-                    ][
-
-                        Math.floor(
-
-                            Math.random() * 5
-
-                        )
-
-                    ];
+            heart.className =
+                "heart";
 
 
-                heart.style.left =
+            heart.textContent =
 
-                    Math.random() * 100 + "vw";
-
-
-                heart.style.fontSize =
-
-                    (
-
-                        18 +
-
-                        Math.random() * 25
-
-                    ) + "px";
+                icons[
+                    Math.floor(
+                        Math.random() *
+                        icons.length
+                    )
+                ];
 
 
-                heart.style.animationDuration =
+            heart.style.left =
 
-                    (
-
-                        2.5 +
-
-                        Math.random() * 2.5
-
-                    ) + "s";
+                Math.random() *
+                100 +
+                "vw";
 
 
-                document
+            heart.style.fontSize =
 
-                    .body
-
-                    .appendChild(heart);
-
-
-                setTimeout(
-
-                    function() {
-
-                        heart.remove();
-
-                    },
-
-                    5500
-
-                );
+                (
+                    16 +
+                    Math.random() *
+                    32
+                ) +
+                "px";
 
 
-            },
+            heart.style.animationDuration =
 
-            i * 55
+                (
+                    2.2 +
+                    Math.random() *
+                    3.5
+                ) +
+                "s";
 
-        );
+
+            document
+                .body
+                .appendChild(heart);
+
+
+            setTimeout(function() {
+
+                heart.remove();
+
+            }, 6500);
+
+
+        }, i * 30);
+
+    }
+
+
+    /* SPARKLES */
+
+    for (
+        let i = 0;
+        i < 40;
+        i++
+    ) {
+
+        setTimeout(function() {
+
+            const star =
+                document.createElement("div");
+
+
+            star.className =
+                "star";
+
+
+            star.textContent =
+                "✦";
+
+
+            star.style.left =
+
+                Math.random() *
+                100 +
+                "vw";
+
+
+            star.style.top =
+
+                Math.random() *
+                100 +
+                "vh";
+
+
+            star.style.fontSize =
+
+                (
+                    12 +
+                    Math.random() *
+                    18
+                ) +
+                "px";
+
+
+            document
+                .body
+                .appendChild(star);
+
+
+            setTimeout(function() {
+
+                star.remove();
+
+            }, 1500);
+
+
+        }, i * 70);
 
     }
 
 }
+
 </script>
+
+
 </body>
+
 </html>
- 
